@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net7.0</TargetFrameworks>
@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="FSharp.Control.FusionTasks" Version="2.6.0" />
+    <PackageReference Include="FSharpPlus" Version="1.4.1" />
   </ItemGroup>
 
 </Project>
