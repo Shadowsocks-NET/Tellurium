@@ -1,25 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B668698E-8CA4-4028-9DCF-3459FAB0E666}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABA8AB78-3A20-48AB-8E49-C5001869FA22}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-		README.md = README.md
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Core", "Tellurium.Core\Tellurium.Core.fsproj", "{339571A1-FFEB-4E13-8CF1-BA6E95FF31BB}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium", "Tellurium\Tellurium.fsproj", "{F5326282-392A-4018-A065-72225A879492}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.UI", "Tellurium.UI\Tellurium.UI.fsproj", "{8EDC94ED-6677-4B85-8395-F7795E19EC39}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Android", "Tellurium.Android\Tellurium.Android.fsproj", "{826164D6-5A87-4C91-B950-7A197CAD6026}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Desktop", "Tellurium.Desktop\Tellurium.Desktop.fsproj", "{00696F21-674E-411D-BFF2-3452144A2E76}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Desktop", "Tellurium.Desktop\Tellurium.Desktop.fsproj", "{C2BEAE84-EFD1-4CB8-9323-4CF23DF2E310}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Browser", "Tellurium.Browser\Tellurium.Browser.fsproj", "{A370EF96-D059-460D-839C-3C4CE7192200}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.iOS", "Tellurium.iOS\Tellurium.iOS.fsproj", "{A87412B3-7CB7-4C27-933F-25853A1B860C}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Android", "Tellurium.Android\Tellurium.Android.fsproj", "{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}"
-EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.iOS", "Tellurium.iOS\Tellurium.iOS.fsproj", "{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Tellurium.Browser", "Tellurium.Browser\Tellurium.Browser.fsproj", "{68A88C98-EE56-4C1D-B895-31D6D40FAD4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,39 +26,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{339571A1-FFEB-4E13-8CF1-BA6E95FF31BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{339571A1-FFEB-4E13-8CF1-BA6E95FF31BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{339571A1-FFEB-4E13-8CF1-BA6E95FF31BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{339571A1-FFEB-4E13-8CF1-BA6E95FF31BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EDC94ED-6677-4B85-8395-F7795E19EC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EDC94ED-6677-4B85-8395-F7795E19EC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EDC94ED-6677-4B85-8395-F7795E19EC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EDC94ED-6677-4B85-8395-F7795E19EC39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00696F21-674E-411D-BFF2-3452144A2E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00696F21-674E-411D-BFF2-3452144A2E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00696F21-674E-411D-BFF2-3452144A2E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00696F21-674E-411D-BFF2-3452144A2E76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A370EF96-D059-460D-839C-3C4CE7192200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A370EF96-D059-460D-839C-3C4CE7192200}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A370EF96-D059-460D-839C-3C4CE7192200}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A370EF96-D059-460D-839C-3C4CE7192200}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7BB12CE-B72E-4A4C-A465-A39FFF4E819C}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B9AF68D-7BE8-4BE1-A8BB-8588FCDB6B27}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F5326282-392A-4018-A065-72225A879492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5326282-392A-4018-A065-72225A879492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5326282-392A-4018-A065-72225A879492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5326282-392A-4018-A065-72225A879492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826164D6-5A87-4C91-B950-7A197CAD6026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826164D6-5A87-4C91-B950-7A197CAD6026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826164D6-5A87-4C91-B950-7A197CAD6026}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{826164D6-5A87-4C91-B950-7A197CAD6026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826164D6-5A87-4C91-B950-7A197CAD6026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BEAE84-EFD1-4CB8-9323-4CF23DF2E310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BEAE84-EFD1-4CB8-9323-4CF23DF2E310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BEAE84-EFD1-4CB8-9323-4CF23DF2E310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BEAE84-EFD1-4CB8-9323-4CF23DF2E310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A87412B3-7CB7-4C27-933F-25853A1B860C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87412B3-7CB7-4C27-933F-25853A1B860C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87412B3-7CB7-4C27-933F-25853A1B860C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A87412B3-7CB7-4C27-933F-25853A1B860C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87412B3-7CB7-4C27-933F-25853A1B860C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A88C98-EE56-4C1D-B895-31D6D40FAD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A88C98-EE56-4C1D-B895-31D6D40FAD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A88C98-EE56-4C1D-B895-31D6D40FAD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A88C98-EE56-4C1D-B895-31D6D40FAD4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {37A64CEC-DCE3-4FE1-85F0-BAB3AB2DC26D}
+		SolutionGuid = {5976E122-ADE7-4648-B2FD-553BA63FB66A}
 	EndGlobalSection
 EndGlobal

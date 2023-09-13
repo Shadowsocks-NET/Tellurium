@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <!-- #if (Platform == iOS || Platform == Android) -->
+    <!-- Application information for mobile projects -->
+    <ApplicationId>com.companyname.AvaloniaFuncUIApplication</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0-funcui</ApplicationDisplayVersion>
+    <ApplicationTitle>Avalonia FuncUI Application</ApplicationTitle>
+    <!-- #endif -->
+    <!-- Avalonia versions -->
+    <AvaloniaVersion>11.0.0-rc1.1</AvaloniaVersion>
+    <AvaloniaFuncUIVersion>1.0.0-rc1.1.0</AvaloniaFuncUIVersion>
+  </PropertyGroup>
+</Project>

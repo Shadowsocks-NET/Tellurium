@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "avtest.Browser": {
+    "Tellurium.Browser": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
